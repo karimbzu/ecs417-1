@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
+<!-- Head part -->
 <head>
-    <title>Portfolio</title>
+    <!--    for title on top browser-->
+    <title>Samy Portfolio</title>
+    <!--    include external css to manage proper-->
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Start body parte -->
 <body>
+
+<!-- Section 1 = Menu  -->
 <div id="header">
     <div class="container">
         <ul class="menu">
@@ -13,23 +19,30 @@
             <li><a href="#skills-education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li style="float: right"><a href="login.php">Login</a></li>
         </ul>
     </div>
 </div>
 
+<!-- Section 2 = Slider/Background image with my name -->
 <div class="background-image">
-    <h1 class="header-h1">Welcome to My Portfolio</h1>
-    <h2 class="header-h2"> I am Samy</h2>
+    <!-- h1 & h2 css coming from style.css  line no 72, 80 -->
+    <h1 class="section2-h1">Welcome to My Portfolio</h1>
+    <h2 class="section2-h2"> I am Samy</h2>
 </div>
 
+<!-- Section 3 == About me and my Social link-->
 <section id="about">
     <div class="container-profile">
+        <!-- Use card css  line 94-->
         <div class="card">
+            <!-- row clss for make responsive proper section line 13-->
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img class="profile-image" src="image/sammy.jpeg">
+                            <!-- My Image, coming from image folder, css line 103-->
+                            <img class="profile-image" src="image/samy.jpeg">
                         </div>
                         <div class="col-sm-8">
                             <h1 class="profile-h1">About me </h1>
@@ -41,11 +54,12 @@
                             </h2>
                         </div>
                     </div>
+                    <!-- Social media images & link, images coming from image folder -->
                     <div class="row">
-                        <a href=""><img  src="image/1_Instagram_colored_svg_1-512.webp" class="Social-media"> </a>
-                        <a href=""><img  src="image/fb.webp" class="Social-media"> </a>
-                        <a href=""><img  src="image/1_Linkedin_unofficial_colored_svg-512.webp" class="Social-media"> </a>
-                        <a href=""><img  src="image/1_Twitter2_colored_svg-512.webp" class="Social-media"> </a>
+                        <a href="#"><img  src="image/1_Instagram_colored_svg_1-512.webp" class="Social-media"> </a>
+                        <a href="#"><img  src="image/fb.webp" class="Social-media"> </a>
+                        <a href="#"><img  src="image/1_Linkedin_unofficial_colored_svg-512.webp" class="Social-media"> </a>
+                        <a href="#"><img  src="image/1_Twitter2_colored_svg-512.webp" class="Social-media"> </a>
                     </div>
                 </div>
             </div>
@@ -54,31 +68,38 @@
 
 </section>
 
+<!-- Section 4  Skill & Education -->
 <section id="skills-education">
     <div class="container-skills">
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
+                    <!-- Skill part col-sm-6 mean 50% width for this section-->
                     <div class="col-sm-6">
                         <div class="">
                             <div class="row">
+
                                 <h1 class="profile-h1">Skills </h1>
+                                <!-- User Progress css -->
                                 <div class="col-sm-12">
-                                    <h3 class="h3-progrss" >Html</h3> <progress  class="progress" value="88" max="100" ></progress>
-                                    <h3 class="h3-progrss">Css</h3> <progress  class="progress"  value="88" max="100"></progress>
-                                    <h3 class="h3-progrss">JavaScript</h3><progress class="progress"  value="70" max="100"></progress>
-                                    <h3 class="h3-progrss">Php</h3><progress class="progress"  value="47" max="100"></progress>
+                                    <!-- css Line no 154, 161 -->
+                                    <h3 class="h3-progress" >Html</h3> <progress  class="progress" value="88" max="100" ></progress>
+                                    <h3 class="h3-progress">Css</h3> <progress  class="progress"  value="88" max="100"></progress>
+                                    <h3 class="h3-progress">JavaScript</h3><progress class="progress"  value="70" max="100"></progress>
+                                    <h3 class="h3-progress">Php</h3><progress class="progress"  value="47" max="100"></progress>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Education part col-sm-6 mean 50% width for this section-->
                     <div class="col-sm-6">
                         <div class="">
                             <div class="row">
                                 <h1 class="profile-h1">Education </h1>
                                 <div class="col-sm-12">
                                     <h3 class="black">1. Computer Science [Currently enrolled]</h3>
-                                    <h4 class="paddleft20">[September 2020 -2021]</h4>
+                                    <!-- use paddleft20 class for give padding from the left css line 168 -->
+                                    <h4 class="paddleft20">[September 2019 -To date]</h4>
                                     <p class="paddleft20">Education Queen Marry University, London, UK</p>
                                 </div>
                                 <div class="col-sm-12">
@@ -86,7 +107,6 @@
                                     <h4 class="paddleft20">[20017-2019]</h4>
                                     <p class="paddleft20">Education Queen Marry University, London, UK</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -95,12 +115,14 @@
         </div>
     </div>
 </section>
+<!--For break use br tag and for horizontal line use hr -->
 <hr><br>
+
+<!-- Section 5  Experience part -->
 <section id="experience">
     <div class="container-experience">
         <h1 class="black">Experience</h1>
         <div class="row">
-
             <div class="col-sm-6 edubox">
                 <h2>IT department as volunteered</h2>
                 <h4>2018-2019</h4>
@@ -115,18 +137,27 @@
     </div>
 
 </section>
+<!--For break use br tag and for horizontal line use hr -->
 <hr><br>
+
+
+<!--Section 6  Contact part-->
 <section id="contact">
+    <!-- Css line no 180-->
     <div class="container-contact">
 
         <div class="row">
+            <!-- Give center postion and proper alignment use css line no 206 -->
             <div class="form-box">
+                <!-- black class for text black-->
                 <h1 class="black">Contact Me</h1>
+                <!-- Use Form tag and input types -->
                 <form class="">
                     <input type="text" name="name" placeholder="Name">
                     <input type="email" name="email" placeholder="E-mail">
                     <input type="text" name="subject" placeholder="Subject">
-                    <textarea type="text" name="messege" placeholder="Messege"></textarea>
+                    <textarea type="text" name="message" placeholder="Message"></textarea>
+                    <!-- Button for Submit form -->
                     <button class="button" type="submit">Submit</button>
                 </form>
             </div>
@@ -134,5 +165,6 @@
     </div>
 </section>
 
+<!-- Close Body here-->
 </body>
 </html>

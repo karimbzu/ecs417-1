@@ -1,3 +1,5 @@
+
+/* Intilize body and headings, other tags of html */
 body, ul, li, div, h1, h2 {
     margin: 0;
     box-sizing: border-box;
@@ -9,46 +11,6 @@ h1{
 h2 {
     font-size: 24px;
 }
-.header-h1{
-    font-size: 40px;
-    text-align: center;
-    color: white;
-    padding-top: 14%;
-
-}
-
-.header-h2{
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    padding-top: 1%;
-}
-
-.background-image {
-    background-image: url("image/background.jpg");
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.menu li {
-    display: inline;
-    padding: 5px 10px
-}
-
-#header {
-    background: #1b1bbb;
-    padding: 15px 0px;
-}
-
-.menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
 .row {
     --bs-gutter-x: 1.3rem;
     --bs-gutter-y: 2;
@@ -78,6 +40,59 @@ h2 {
     flex: 0 0 auto;
     width: 34%;
 }
+/* End Intialization*/
+
+
+/* Menu Css  Section 1*/
+#header {
+    background: #1b1bbb;
+    padding: 15px 0px;
+}
+.menu li {
+    display: inline;
+    padding: 5px 10px
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menuright li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    float: right;
+}
+/* End Menu Css */
+
+/*Section 2 css8 */
+.background-image {
+    background-image: url("image/background.jpg"); /*Set backgroudn image */
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2-h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 14%;
+
+}
+
+.section2-h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+}
+
+
+/*Section 3 About me*/
 
 .container-profile {
     padding: 10px 12px;
@@ -131,6 +146,7 @@ h2 {
     text-align: left;
 }
 
+/*social Media Icons*/
 .Social-media {
     height: 30px;
     width: 30px;
@@ -138,10 +154,12 @@ h2 {
     padding-bottom: 20px;
 }
 
+/* Section 4 Skill & Education */
 .container-skills{
     padding: 10px 12px;
 }
 
+/*progress bar*/
 progress {
     padding-left: 40px;
     height:24px;
@@ -149,14 +167,17 @@ progress {
     margin-left: 40px;
 }
 
-.h3-progrss{
+.h3-progress{
     padding-left: 40px;
 
 }
+/*black color*/
 .black{
     color: black;
 }
 .paddleft20{padding-left: 20px}
+
+/*Section 5  Experience part css*/
 .container-experience{    padding: 0px 30px; }
 .edubox{
     border: 1px solid #ccc;
@@ -164,22 +185,27 @@ progress {
     background: #e6e6e6;
 }
 
-.container-contact{    padding: 0px 30px;
-    padding-bottom: 30px}
 
-
+/*Section 6  Contact part css*/
+.container-contact{
+    padding: 0px 30px;
+    padding-bottom: 30px
+}
+/*Input box css*/
 input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
+/*textarea box css*/
 textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
+/*button css*/
 .button {
     background-color: #4CAF50;
     color: white;
@@ -187,6 +213,7 @@ textarea {
     text-align: center;
     font-size: 16px;
 }
+/*form section css*/
 .form-box{
     width: 50%;
     margin: 0 auto;
@@ -194,3 +221,7 @@ textarea {
     padding: 0px 20px;border-radius: 5px;
     padding-bottom: 20px;
 }
+
+
+
+
