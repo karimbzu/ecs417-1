@@ -68,13 +68,11 @@
         <!-- black class for text black-->
         <h1 class="black">Add</h1>
         <!-- Use Form tag and input types -->
-        <!-- This form submit on addpost_save.php -->
-        <form method="post" action="addpost_save.php" id="myForm" >
+        <form method="post" action="addpost_save.php" id="myForm" onsubmit="event.preventDefault(); validateMyForm();">
             <input type="text" name="title" id="title" placeholder="Title">
             <textarea typeof="text" name="description" id="description" placeholder="Description"></textarea>
             <!-- Button for Submit form -->
             <button class="button" type="submit" name="save">Submit</button>
-            <!-- Criteria 1 -->
             <button class="clear-button" type="button" onclick="clearForm()">Clear</button>
         </form>
     </div>
@@ -82,56 +80,39 @@
 
 
 </body>
-<script
-    src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
 <script>
-    // Criteria 1 clear form function
+    //Clear frm data
     function clearForm() {
         document.getElementById('myForm').reset();
     }
-    //Crtieria 2nd where we highlight the form if not value/valid
 
-        $("#myForm").submit(function (e) {
-            e.preventDefault(); // Prevent Default
-            if ($('#title').val() == '') {
-                $('#title').css("border", "1px solid red")
+        function validateMyForm()
+        {
+            var title =  document.getElementById('title').value;
+            var description =  document.getElementById('description').value;
+
+            if (title == '') {
+                document.getElementById("title").style.border = '1px solid red';
             } else {
-                $('#title').css("border", "")
+                document.getElementById("title").style.border = '';
             }
-            if ($('#description').val() == '') {
-                $('#description').css("border", "1px solid red")
+            if ( description == '') {
+                document.getElementById("description").style.border = '1px solid red';
             } else {
-                $('#description').css("border", "")
+                document.getElementById("description").style.border = '';
             }
-            if ($('#title').val() && $('#description').val()) {
+            if (title &&  description) {
                 document.getElementById("myForm").submit();
+                return true;
+            }else{
+                return false;
             }
-            //window.history.back();
-        });
+
+        }
 
 
 
-    // $(document).ready(function () {
-    //     $("#myForm").submit(function (e) {
-    //         e.preventDefault()
-    //
-    //         if ($('#title').val() == '') {
-    //             $('#title').css("border", "1px solid red")
-    //         } else {
-    //             $('#title').css("border", "")
-    //         }
-    //         if ($('#description').val() == '') {
-    //             $('#description').css("border", "1px solid red")
-    //         } else {
-    //             $('#description').css("border", "")
-    //         }
-    //
-    //         if ($('#title').val() && $('#description').val()) {
-    //             $("#myForm").submit()
-    //         }
-    //         return false;
-    //     });
-    // });
 </script>
 </html>
 
